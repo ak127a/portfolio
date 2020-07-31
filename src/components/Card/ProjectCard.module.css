@@ -1,0 +1,55 @@
+.card {
+  width: 70%;
+  min-height: 450px;
+  margin: 0 auto 30px auto;
+  background: grey;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgb(2, 204, 255);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+}
+
+.imageGallery {
+  width: 100% !important;
+  max-height: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.imageGallery img {
+  object-fit: contain !important;
+  max-height: 200px !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    width: 90%;
+    min-height: 470px;
+    margin: 0 auto;
+  }
+}
+
+.card:hover {
+  box-shadow: 0px 0px 40px 5px #5e9cf8;
+}
+
+.projectlink {
+  position: absolute !important;
+  height: 30px;
+  width: 140px;
+  left: calc(50% - 70px);
+  padding: 5px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff !important;
+  margin: 0 auto;
+  background-color: rgb(1, 2, 85) !important;
+  bottom: 5px;
+}
+
+.desc {
+  margin-top: 7px !important;
+}

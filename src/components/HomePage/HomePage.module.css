@@ -1,0 +1,137 @@
+/* .navContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(158, 158, 158);
+} */
+
+.firstContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.manlaptopimg {
+  width: 100%;
+}
+
+.introimg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landingpage {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.projectsHeading {
+  color: #fff;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.skillsGrid {
+  width: 80% !important;
+  margin: 0 auto;
+  padding-bottom: 100px !important;
+  margin-top: 150px !important;
+}
+
+.projectsGrid {
+  width: 85% !important;
+  margin: 0 auto !important;
+  margin-top: 100px !important;
+}
+
+.animatedbg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+}
+
+.introContainer {
+  position: absolute;
+  top: 35vh;
+}
+
+.skillsContainer {
+  margin-top: 100px;
+}
+.skillsHeading {
+  color: #fff;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.landingpage::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  /* background-image: url("../../images/bgparticle.jpg"); */
+  position: absolute;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+}
+
+.name {
+  color: #fff;
+  margin-left: 60px !important;
+  font-weight: 800 !important;
+}
+
+.tagline {
+  color: #fff;
+  margin-left: 60px !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .name {
+    font-size: 40px !important;
+    padding: 10px;
+    margin-left: 0px !important;
+    text-align: center;
+  }
+  .tagline {
+    font-size: 30px !important;
+    text-align: center;
+    margin-left: 0px !important;
+  }
+  .projectsHeading {
+    margin-left: 20px !important;
+  }
+  .skillsHeading {
+    margin-left: 20px !important;
+  }
+  .projectsGrid,
+  .skillsGrid {
+    width: 90%;
+  }
+  .firstContainer {
+    flex-direction: column;
+  }
+  .intro {
+    display: block;
+  }
+}
