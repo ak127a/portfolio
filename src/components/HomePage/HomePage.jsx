@@ -4,7 +4,7 @@ import { animated } from "react-spring";
 
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { ProjectCard, SkillsCard } from "../../components/Card";
-import { Grid, TextareaAutosize } from "@material-ui/core";
+import { Grid, TextareaAutosize, Divider } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import Bounce from "react-reveal/Bounce";
 import Fade from "react-reveal/Fade";
@@ -184,8 +184,29 @@ function HomePage() {
             </div>
           </div>
         </div>
-
-        <div className={styles.introContainer}></div>
+      </div>
+      <div className={styles.aboutMeContainer}>
+        <Typography className={styles.aboutMeTag} variant="h2">
+          A Full Stack Mobile and Web Developer
+        </Typography>
+        <Typography className={styles.aboutMeBody} variant="h5">
+          I have been working as a full stack developer since 2018. I have
+          always strived to create minimal and good looking interfaces coupled
+          with robust backend. I try my best to learn something new every single
+          day. Let's take a look at my skills.
+        </Typography>
+      </div>
+      <div className={styles.skillsContainer1}>
+        <div className={styles.mobileskills}>
+          <img src={mobiledev} />
+          <Typography variant="h4">Mobile Development</Typography>
+          <Divider style={{ backgroundColor: "#fff", marginTop: "30px" }} />
+        </div>
+        <div className={styles.webskills}>
+          <img src={webdev} />
+          <Typography variant="h4">Web Development</Typography>
+          <Divider style={{ backgroundColor: "#fff", marginTop: "30px" }} />
+        </div>
       </div>
       <div className={styles.projectsContainer}>
         <div className={styles.projectsHeading}>
